@@ -213,3 +213,116 @@ footer i:hover{
     color: black;
     transition: 0.8s;
 }
+
+
+/*! PAGINA CLASES */
+.bloque-grid-clases{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.contenedor-clases{
+    display: grid;
+    grid-template-columns: 5% 6fr 5%;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+.texto-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: rgb(34, 3, 63);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.contenido-clases{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.titulo-parrafo-clases{
+    width: 70%;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titulo-parrafo-clases h3{
+    background-color: rgb(34, 3, 63);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.img-clases{
+    width: 30%;
+    height: 300px;
+    border: 2px solid rgb(34, 3, 63);
+}
+
+.img-clases img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+/*! CARROUSEL CLASES */
+.promociones{
+    background-color: black;
+    padding: 5px 5px;
+}
+
+
+.promociones h2{
+    background-color: rgb(34, 3, 63);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.promociones .contenedor-clases-promos{
+    display: grid;
+    grid-template-columns: 5% 6fr 5%;
+    height: 1000px;
+    background-color: blueviolet;
+}
+
+
+
+
+/*! PAGINA CONTACTO */
+
+main .h2-contacto{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.formulario-pago{
+    padding: 30px;
+    border-radius: 25px;
+    height: auto;
+    border: 1px solid;
+}
+
+.formulario-pago div select option{
+    color: black !important;
+}
