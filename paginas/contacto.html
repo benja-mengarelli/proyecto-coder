@@ -67,30 +67,41 @@
     </header>
 
     <main>
+        <!-- Titulo + caja que contiene al formulario-->
         <h2 class="h2-contacto">Contactanos!</h2>
+        <!--! Mas adelante se genera otra seccion para el pago-->
         <div class="formulario-pago">
+            <!--Formulario que necesita si o si completar datos-->
             <form class="row g-3 needs-validation" novalidate>
+                <!--Nombre y apellido-->
                 <div class="input-group">
-                    <span class="input-group-text">Nombre y Apellido</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+                    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
                 </div>
+
+                <!--EMAIL-->
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="nombre@gmail.com">
                     <label for="floatingInput">Mail</label>
                 </div>
+
+                <!--CELULAR-->
                 <div class="input-group input-group-sm mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Telefono</span>
                     <input type="number" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-sm">
+                        aria-describedby="inputGroup-sizing-sm" placeholder="ej: 3510000000">
                 </div>
+
+                <!--CIUDAD-->
                 <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label">City</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Cordoba" required>
                     <div class="invalid-feedback">
                         Ingrese su ciudad.
                     </div>
                 </div>
+
+                <!--SUCURSAL A ELEGIR-->
                 <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">Gimnasio</label>
                     <select class="form-select" id="validationCustom04" required>
@@ -103,13 +114,16 @@
                         Seleccione una zona.
                     </div>
                 </div>
+
+                <!--CP (influenciara en ciertas promociones, etc)-->
                 <div class="col-md-3">
                     <label for="validationCustom05" class="form-label">CP</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="ej: 0000" required>
                     <div class="invalid-feedback">
                         Se requiere el codigo postal.
                     </div>
                 </div>
+                <!--mensaje de suscripcion a mails, mensajes, etc-->
                 <div class="col-12">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -121,18 +135,42 @@
                         </div>
                     </div>
                 </div>
+                <!--Boton de enviar formulario-->
                 <div class="col-12">
                     <button class="btn btn-primary" type="submit">Contactame!</button>
                 </div>
             </form>
         </div>
-        
-        <section>
-            <h2 class="h2-contacto">Algunas Promociones...</h2>
-
-        </section>
-
     </main>
+
+    <!--! Falta agregar seccion de pago y seccion con mapas de sucursales-->
+
+    <!--! falta terminar-->
+    <section class="promociones">
+        <h2>PROMOCIONES PARA VOS!</h2>
+        <div class="contenedor-clases-promos">
+            <div class="texto-vertical izq">PROMOS</div>
+                <div>
+                    <p></p>
+                    <img src="" alt="">
+                </div>
+            <div class="texto-vertical izq">ESPECIALES</div>
+
+            <div class="texto-vertical izq">PROMOS</div>
+                <div>
+                    <p></p>
+                    <img src="" alt="">
+                </div>
+            <div class="texto-vertical izq">ESPECIALES</div>
+
+            <div class="texto-vertical izq">PROMOS</div>
+                <div>
+                    <p></p>
+                    <img src="" alt="">
+                </div>
+            <div class="texto-vertical izq">ESPECIALES</div>
+        </div>
+    </section>
 
 
     <footer>
