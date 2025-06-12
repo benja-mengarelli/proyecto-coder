@@ -19,41 +19,41 @@ header{
 }
 
 /* TITULO */
-header h1{
+header nav div h1{
     font-size: 50px;
     font-style: italic;
     color: white;
 }
 
 /* Color header */
-header nav ul{
+header nav div div ul{
     background-color: rgb(89, 8, 165) !important;
 }
 
 /* Color texto nav */
-header nav ul li a{
+header nav div div ul li a{
     color: white !important;
 }
 
 /* Animacion enlaces nav */
-header nav ul li a:hover{
+header nav div div ul li a:hover{
     color: rgb(109, 34, 180) !important;
     transition: 0.5s;
     text-decoration: underline;
 }
 
 /* animacion seccion productos */
-header .dropdown-menu li a:hover{
+header nav div div ul li .dropdown-menu li a:hover{
     background-color: rgb(109, 34, 180);
 }
 
 /* decoracion del buscador */
-header .boton-buscar{
+header nav div div form .boton-buscar{
     border: 1px solid;
     color: white;
 }
 
-header .boton-buscar:hover{
+header nav div div form .boton-buscar:hover{
     background-color: rgb(109, 34, 180);
     transition: 0.5s;
     border: 1px solid
@@ -65,7 +65,7 @@ main{
 }
 
 /*SECCION HERO*/
-.hero{
+main .hero{
     height: 600px;
     background-image: url(../imagenes/boxeo.jpg);
     background-position: center;
@@ -79,14 +79,14 @@ main{
     padding: 10px;
 }
 
-.hero h2{
+main .hero h2{
     font-size: 40px;
     background-color: rgba(137, 43, 226, 0.529);
     border-radius: 25px;
     padding: 10px;
 }
 
-.hero p{
+main .hero p{
     font-size: 30px;
     padding: 10px;
     margin: 10px;
@@ -95,24 +95,24 @@ main{
     text-align: center;
 }
 
-.hero a{
+main .hero a{
     font-size: 15px;
     text-decoration: none;
     color: white;
 }
 
-.hero .boton-conocer{
+main .hero .boton-conocer{
     background-color:blueviolet;
 }
 
-.hero .boton-conocer:hover{
+main .hero .boton-conocer:hover{
     background-color: rgb(109, 34, 180);
     transition: 0.5s;
     border: 1px solid
 }
 
 /*! ICONO DE WHATSAPP */
-.logo-wp a img{
+main .logo-wp a img{
     width: 50px;
     height: 50px;
     position: fixed;
@@ -122,7 +122,7 @@ main{
 }
 
 /*! Seccion clases */
-.clases h2{
+main .clases h2{
     text-align: center;
     padding: 10px;
     margin: 5px 0;
@@ -130,7 +130,7 @@ main{
     background-color: blueviolet;
 }
 
-.caja-clases{
+main .clases .caja-clases{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -140,18 +140,18 @@ main{
     
 }
 
-.caja-clases:nth-child(odd){
+main .clases .caja-clases:nth-child(odd){
     background-color: blueviolet;
 }
 
-.caja-clases img{
+main .clases .caja-clases img{
     height: 100%;
     width: 200px; 
 }
 
 
 /*!Seccion gimnasio */
-.gimnasio h2{
+main .gimnasio h2{
     text-align: center;
     margin: 5px 0;
     padding: 10px;
@@ -159,25 +159,25 @@ main{
     background-color: blueviolet;
 }
 
-.caja-gimnasio{
+main .gimnasio div .caja-gimnasio{
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
-.caja-gimnasio div{
+main .gimnasio div .caja-gimnasio div{
     height: 100%;
     width: 50%;
     text-align: center;
 }
 
-.caja-gimnasio div img{
+main .gimnasio div .caja-gimnasio div img{
     width: 100%;
     height: 100%;
 }
 
-.caja-gimnasio p{
+main .gimnasio div .caja-gimnasio p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +189,7 @@ main{
 
 /*! seccion sobre nosotros */
 /*! FALTA COMPLETAR*/
-.sobre-nosotros h2{
+main .sobre-nosotros h2{
     text-align: center;
     padding: 10px;
     margin: 5px 0;
