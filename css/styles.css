@@ -14,8 +14,9 @@ main .formulario-pago, footer, main .clases .contenedor-clases-index .caja-clase
 }
 
 body {
+  width: 100%;
   background-image: url(../imagenes/boxeo.jpg);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -63,9 +64,10 @@ header nav div div form .boton-buscar:hover {
 main .hero {
   height: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   padding: 10px;
 }
 main .hero h2 {
@@ -113,16 +115,18 @@ main .clases h2 {
 }
 main .clases .contenedor-clases-index {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   z-index: 0;
 }
 main .clases .contenedor-clases-index .caja-clases {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
   width: 40%;
   height: auto;
   margin: 80px 0px;
@@ -143,9 +147,10 @@ main .clases .contenedor-clases-index .caja-clases img {
 main .clases .contenedor-clases-index .caja-clases div {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 main .clases .contenedor-clases-index .caja-clases div p {
   width: 100%;
@@ -189,8 +194,10 @@ main .gimnasio div .caja-gimnasio div img {
 }
 main .gimnasio div .caja-gimnasio p {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
   width: 50%;
   padding: 20px;
@@ -206,6 +213,9 @@ main .sobre-nosotros h2 {
 footer {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   position: sticky;
   bottom: 0;
   z-index: 2;

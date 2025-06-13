@@ -7,10 +7,11 @@ $colores: rgb(109, 34, 180), rgb(89, 8, 165);
     box-shadow: 0 0px 32px rgba(0, 0, 0, 0.25)
 }
 
-@mixin centrado($display, $justify, $align, $wrap){
+@mixin centrado($display, $justify, $align, $wrap, $direction){
     display: $display;
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
+    flex-direction: $direction;
 }
 
