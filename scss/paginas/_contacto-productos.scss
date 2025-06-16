@@ -1,0 +1,60 @@
+//* PAGINA CONTACTO
+main {
+    .h2-contacto {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: rgba(109, 26, 186, 0.555);
+        border-radius: 20px;
+        padding: 20px 50px;
+        margin-top: 10px;
+    }
+
+    .formulario-pago {
+        @extend %fondo-vidrio;
+        padding: 30px;
+        border-radius: 25px;
+        height: auto;
+        border: 1px solid black;
+
+        div {
+            select {
+                option {
+                    color: black !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+//* PAGINA PRODUCTOS
+main {
+    .contenedor-productos {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            margin: 30px;
+            background-color: rgb(34, 3, 63);
+
+            img {
+                height: 60%;
+                width: 100%;
+            }
+
+            .card-body {
+                color: whitesmoke;
+                text-align: center;
+            }
+        }
+    }
+
+    .paginacion-productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

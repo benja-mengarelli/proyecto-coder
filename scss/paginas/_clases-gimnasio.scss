@@ -1,0 +1,145 @@
+//* PAGINA GIMNASIO
+.main-gimnasio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px 5px;
+    height: 100vh;
+    grid-template-areas: "hor-1 hor-1 ver-1"
+        "ver-2 medio ver-1"
+        "ver-2 hor-2 hor-2";
+
+    .horizontal-1 {
+        grid-area: hor-1;
+    }
+
+    .vertical-1 {
+        grid-area: ver-1;
+    }
+
+    .vertical-2 {
+        grid-area: ver-2;
+    }
+
+    .medio {
+        grid-area: medio;
+    }
+
+    .horizontal-2 {
+        grid-area: hor-2;
+    }
+
+    .caja-gimnasio-g {
+        outline: 2px dashed rgb(89, 8, 165);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.10);
+        }
+
+
+        a {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            p {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-shadow: 1px 1px 3px black;
+            }
+        }
+    }
+}
+
+
+//* PAGINA CLASES
+main {
+    .bloque-grid-clases {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+
+        .contenedor-clases {
+            display: grid;
+            grid-template-columns: 5% 6fr 5%;
+            height: 300px;
+            background-color: blueviolet;
+
+            .texto-vertical {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                background-color: rgb(34, 3, 63);
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                padding: 10px 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+            }
+
+            .contenido-clases {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                width: 100%;
+
+                .titulo-parrafo-clases {
+                    width: 70%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    h3 {
+                        background-color: rgb(34, 3, 63);
+                        font-weight: bold;
+                        font-family: cursive;
+                    }
+                }
+
+                .img-clases {
+                    width: 30%;
+                    height: 300px;
+                    border: 2px solid rgb(34, 3, 63);
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
