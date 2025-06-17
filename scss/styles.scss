@@ -23,3 +23,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll !important; // evita errores móviles
+        background-size: contain; // mantiene proporción y ocupa todo
+        background-repeat: repeat;
+    }
+}

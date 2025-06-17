@@ -491,4 +491,12 @@ body {
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
