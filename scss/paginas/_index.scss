@@ -1,5 +1,7 @@
 //* INDEX
 
+
+
 //* MAIN
 main {
 
@@ -138,15 +140,18 @@ main {
             margin: 10px 0;
             padding: 10px;
             border: 1px solid;
-            background-color: rgba(137, 43, 226, 0.697);
+            background-color: rgba(137, 43, 226, 0.653);
         }
 
         div {
             .caja-gimnasio {
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
                 margin: 0;
                 padding: 0;
+                height: auto;
+                background-color: rgba(88, 10, 160, 0.179);
 
                 div {
                     height: 100%;
@@ -162,9 +167,12 @@ main {
                 p {
                     @include centrado(flex, center, center, wrap, row);
                     text-align: center;
+                    font-family: $fuente-alternativa;
+                    font-size: 25px;
                     width: 50%;
                     padding: 20px;
-                    overflow-y: scroll;
+                    overflow-y: auto;
+                    max-height: 200px;
 
                     &::-webkit-scrollbar {
                         display: none;
@@ -181,6 +189,56 @@ main {
             margin: 5px 0;
             border: 1px solid;
             background-color: blueviolet;
+        }
+    }
+}
+
+//*media query
+main {
+    @media screen and (max-width: 1170px) {
+        .clases {
+            .contenedor-clases-index {
+                .caja-clases {
+                    flex-direction: column;
+                    width: 90%;
+                    transition: height 1.5s ease;
+
+                    img {
+                        width: 100%;
+                        max-height: 250px;
+                        border-radius: 20px !important;
+                        align-self: center !important;
+                        transition: 1.5s;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        p {
+                            max-height: 0;
+                            opacity: 0;
+                            transition: all 1.5s ease;
+                        }
+                    }
+
+                    &:hover {
+                        width: 90%; // ya está ancho en mobile, pero lo dejamos para efecto
+
+                        img {
+                            width: 100%;
+                            transform: scale(0.85);
+                        }
+
+                        div {
+                            p {
+                                max-height: 300px;
+                                opacity: 1;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

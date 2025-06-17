@@ -1,8 +1,11 @@
 @import "funcionalidades/constantes";
 @import "funcionalidades/bases";
 @import "paginas/index";
-@import "paginas/clases-gimnasio";
-@import "paginas/contacto-productos";
+@import "paginas/clases";
+@import "paginas/contacto";
+@import "paginas/gimnasio";
+@import "paginas/productos";
+
 
 * {
     padding: 0;
@@ -19,7 +22,4 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
-
-

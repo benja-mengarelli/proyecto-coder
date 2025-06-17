@@ -94,7 +94,7 @@ footer {
 
 //* PROMOCIONES
 .promociones {
-    background-color: blueviolet;
+    @extend %fondo-vidrio;
     padding: 5px 5px;
     gap: 20px;
 
@@ -109,7 +109,7 @@ footer {
         display: grid;
         grid-template-columns: 5% 6fr 5%;
         height: 1000px;
-        background-color: black;
+        @extend %fondo-vidrio;
         gap: 15px;
 
         .texto-vertical {

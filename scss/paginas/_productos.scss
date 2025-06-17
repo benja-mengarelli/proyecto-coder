@@ -1,0 +1,29 @@
+//* PAGINA PRODUCTOS
+main {
+    .contenedor-productos {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            margin: 30px;
+            background-color: rgb(34, 3, 63);
+
+            img {
+                height: 60%;
+                width: 100%;
+            }
+
+            .card-body {
+                color: whitesmoke;
+                text-align: center;
+            }
+        }
+    }
+
+    .paginacion-productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
