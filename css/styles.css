@@ -79,12 +79,26 @@ footer i:hover {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 10PX;
 }
 .promociones .contenedor-clases-promos {
   display: grid;
   grid-template-columns: 5% 6fr 5%;
-  height: 1000px;
-  gap: 15px;
+  height: auto;
+  gap: 5px;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes scroll {
+  from {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .promociones .contenedor-clases-promos .texto-vertical {
   writing-mode: vertical-rl;
@@ -93,13 +107,61 @@ footer i:hover {
   color: white;
   font-size: 18px;
   text-align: center;
-  padding: 10px 0;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+}
+.promociones .contenedor-clases-promos .contenedor-promos {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+.promociones .contenedor-clases-promos .contenedor-promos .promos-titulo-parrafo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: scroll-horizontal linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 33%;
+}
+@keyframes scroll-horizontal {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.promociones .contenedor-clases-promos .contenedor-promos .promos-titulo-parrafo h3 {
+  background-color: rgb(34, 3, 63);
+  width: 100%;
+  text-align: center;
+}
+.promociones .contenedor-clases-promos .contenedor-promos .promos-titulo-parrafo p {
+  text-align: center;
+  width: 70%;
+  color: rgb(34, 3, 63);
+  font-weight: bold;
+}
+.promociones .contenedor-clases-promos .contenedor-promos .promos-titulo-parrafo p span {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: black;
+}
+.promociones .contenedor-clases-promos .contenedor-promos .img-promos {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main .hero {
